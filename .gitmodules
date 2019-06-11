@@ -1,0 +1,6 @@
+[submodule "kow-whois-api"]
+	path = kow-whois-api
+	url = git@github.com:ProteusCortex/kow-whois-api.git
+[submodule "kow-whois-web"]
+	path = kow-whois-web
+	url = git@github.com:ProteusCortex/kow-whois-web.git
