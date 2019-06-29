@@ -1,1 +1,4 @@
-db
+# Keep the db directory, but not its contents.
+db/*
+!db
+!db/.gitkeep
