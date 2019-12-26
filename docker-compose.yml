@@ -9,8 +9,8 @@ services:
         environment:
             MYSQL_ROOT_PASSWORD: "toor"
             MYSQL_DATABASE: "whois"
-            MYSQL_USER: "toor"
-            MYSQL_PASSWORD: "toor"
+            MYSQL_USER: "whois"
+            MYSQL_PASSWORD: "siohw"
         volumes:
             - ./db:/var/lib/mysql
         command: ['mysqld', '--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci']
@@ -21,7 +21,7 @@ services:
         environment:
             - PMA_HOST=db
         ports:
-            - 127.0.0.1:8080:80
+            - 127.0.0.1:8081:80
         networks:
             kow: {}
         depends_on:
@@ -38,7 +38,7 @@ services:
         depends_on:
             - db
         environment:
-            ASPNETCORE_ENVIRONMENT: "Development"
+            ASPNETCORE_ENVIRONMENT: "Production"
 
 networks:
     kow:
